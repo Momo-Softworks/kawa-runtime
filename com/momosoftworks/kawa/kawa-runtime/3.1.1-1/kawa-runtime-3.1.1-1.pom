@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.momosoftworks.kawa</groupId>
+    <artifactId>kawa-runtime</artifactId>
+    <version>3.1.1-1</version>
+    <name>Kawa Runtime</name>
+    <description>
+        Prebuilt Kawa runtime jar for Forge modding. Upstream git describe:
+        3.1.1-131-g31a0a8755 (131 commits past the 3.1.1 tag). Supersedes
+        3.1.1, which has a confirmed codegen bug producing invalid &lt;clinit&gt;
+        bytecode (VerifyError: "Bad local variable type") for modules with
+        keyword-argument-heavy calls at top level under --module-static-run.
+    </description>
+    <url>https://www.gnu.org/software/kawa/</url>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+</project>

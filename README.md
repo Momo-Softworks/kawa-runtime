@@ -15,15 +15,16 @@ repositories {
 }
 
 dependencies {
-    implementation("com.momosoftworks.kawa:kawa-runtime:3.1.1")
+    implementation("com.momosoftworks.kawa:kawa-runtime:3.1.1-1")
 }
 ```
 
 ## Version
 
-| Version | Kawa | Source |
-|---------|------|--------|
-| 3.1.1   | 3.1.1 | Built by GNU Guix |
+| Version | Kawa (git describe) | Source | Notes |
+|---------|------|--------|-------|
+| 3.1.1-1 | 3.1.1-131-g31a0a8755 | Arch Linux `kawa` package | Fixes a `<clinit>` codegen bug (`VerifyError: Bad local variable type`) present in 3.1.1, for modules with keyword-argument-heavy calls at top level under `--module-static-run`. Recommended over 3.1.1. |
+| 3.1.1   | 3.1.1-0-gc47de33ad (exact tag) | Built by GNU Guix | Known bug, see 3.1.1-1. Kept published for existing pins; don't add new dependents on this version. |
 
 ## Updating
 
